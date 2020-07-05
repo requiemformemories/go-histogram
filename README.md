@@ -1,9 +1,12 @@
 # AWS Lambda Histogram Generator
 
+<img src="https://raw.githubusercontent.com/requiemformemories/go-histogram/master/preview.svg">
+
 Serverless Histogram Generator using AWS Lambda and Go.
 
 ## How to deploy
 Create a deployment package by packaging the executable in a ZIP file, and use the AWS CLI to create a function. Please read [AWS Lambda deployment package in Go](https://docs.aws.amazon.com/lambda/latest/dg/golang-package.html) for more information.
+
 ```bash
 go get github.com/aws/aws-lambda-go/lambda
 GOOS=linux go build -o main main.go
